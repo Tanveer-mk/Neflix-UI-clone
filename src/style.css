@@ -190,3 +190,27 @@ main > p {
   bottom: 0;
   right: 0;
 }
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: #2d2d2d;
+  padding: 20px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: ease-in-out 0.25s;
+}
+.faq-item p {
+  padding: 8px;
+}
+.faq-item:hover {
+  background-color: #4e4d4d;
+  transition: ease-in-out 0.25s;
+}
