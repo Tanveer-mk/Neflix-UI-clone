@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -45,10 +44,10 @@ nav {
   cursor: pointer;
   background-color: red;
   color: white;
-  padding: 3px 14px;
+  padding: 8px 14px;
   border-radius: 6px;
   border: none;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.25s;
 }
 .tsp {
   background-color: rgba(23, 23, 23, 0.5);
@@ -109,10 +108,10 @@ nav {
 }
 .btn:hover {
   background-color: rgb(179, 2, 2);
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.25s;
 }
 .separator {
-  height: 19px;
+  height: 10px;
   background-color: grey;
 }
 main {
@@ -120,21 +119,20 @@ main {
   margin: auto;
   padding-top: 20px;
 }
-main p:first-child {
+main > p {
   font-weight: 500;
   font-size: 24px;
-  padding-bottom: 16px;
+  padding: 20px 0px;
 }
 .trd-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 60%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   margin: auto;
 }
 .rec-card {
   position: relative;
-  width: 197px;
+  width: 220px;
   height: 276px;
   cursor: pointer;
   transition: ease-in-out 0.25s;
@@ -142,6 +140,7 @@ main p:first-child {
 .rec-card img {
   border-radius: 10px;
   position: absolute;
+  right: 0;
 }
 .rec-card div {
   position: absolute;
@@ -149,14 +148,45 @@ main p:first-child {
   left: 0;
 }
 .rank {
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 100px;
   color: black;
-  -webkit-text-stroke: 1px white;
-  font-stretch: ultra-expanded;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.808);
+  font-stretch: normal;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
 .rec-card:hover {
   transform: scale(1.05);
   transition: ease-in-out 0.25s;
+}
+.rsn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: auto;
+}
+.rsn-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px black solid;
+  background: linear-gradient(to bottom right, #1a2144, #210f19);
+  border-radius: 20px;
+  padding: 20px 15px 100px 10px;
+}
+
+.rsn-card p:nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.rsn-card p:nth-child(2) {
+  font-size: 14px;
+  color: rgb(202, 202, 202);
+  padding-top: 8px;
+}
+.rsn-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
