@@ -112,7 +112,8 @@ nav {
 }
 .separator {
   height: 10px;
-  background-color: grey;
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom right, #1a2144, #210f19);
 }
 main {
   width: 80vw;
@@ -195,6 +196,7 @@ main > p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 10px;
 }
 .faq-item {
   display: flex;
@@ -213,4 +215,53 @@ main > p {
 .faq-item:hover {
   background-color: #4e4d4d;
   transition: ease-in-out 0.25s;
+}
+footer {
+  width: 85vw;
+  margin: auto;
+}
+footer > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rdy-watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 70px;
+}
+footer > div p:first-child {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+footer .tsp {
+  width: 600px;
+}
+footer > p {
+  color: rgb(150, 150, 150);
+}
+.help-sec {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 5px;
+}
+.help-sec ul li {
+  padding: 5px;
+  list-style: none;
+  font-size: 14px;
+}
+footer a {
+  color: rgb(150, 150, 150);
+}
+#help-btn {
+  width: 100px;
+  margin: 40px 0;
+  padding: 10px;
+}
+.empty {
+  height: 25vh;
 }
