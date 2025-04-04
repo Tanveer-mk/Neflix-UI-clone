@@ -30,7 +30,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
-  width: 85vw;
+  width: 80vw;
   height: 60px;
   margin: auto;
 }
@@ -217,7 +217,7 @@ main > p {
   transition: ease-in-out 0.25s;
 }
 footer {
-  width: 85vw;
+  width: 80vw;
   margin: auto;
 }
 footer > div:first-child {
@@ -230,6 +230,7 @@ footer > div:first-child {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   padding-bottom: 70px;
 }
 footer > div p:first-child {
@@ -261,7 +262,232 @@ footer a {
   width: 100px;
   margin: 40px 0;
   padding: 10px;
+  background-color: rgba(23, 23, 23, 0.5);
 }
 .empty {
   height: 25vh;
+}
+@media screen and (max-width: 1480px) {
+  .trd-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .rsn-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .welcome span:nth-child(1) {
+    font-size: 48px;
+  }
+  .welcome span:nth-child(2) {
+    font-size: 16px;
+  }
+  .welcome span:nth-child(3) {
+    font-size: 13px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .faq-item {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .trd-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .welcome span:nth-child(1) {
+    font-size: 40px;
+  }
+  .welcome span:nth-child(2) {
+    font-size: 14px;
+  }
+  .welcome span:nth-child(3) {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .faq-item {
+    font-size: 15px;
+  }
+  .gs-section input {
+    height: 30px;
+    width: 300px;
+    padding: 4px 16px;
+  }
+  .gs-section button {
+    height: 35px;
+    padding: 6px 15px;
+  }
+  .rsn-card p:nth-child(1) {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+  .rsn-card p:nth-child(2) {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .trd-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .welcome span:nth-child(1) {
+    font-size: 32px;
+  }
+  .welcome span:nth-child(2) {
+    font-size: 12px;
+  }
+  .welcome span:nth-child(3) {
+    font-size: 10px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .faq-item {
+    font-size: 15px;
+  }
+  .gs-section input {
+    height: 25px;
+    width: 300px;
+    padding: 4px 16px;
+  }
+  .gs-section button {
+    height: 30px;
+    padding: 4px 9px;
+  }
+  .rsn-card p:nth-child(1) {
+    font-size: 15px;
+    padding-top: 8px;
+  }
+  .rsn-card p:nth-child(2) {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  .faq-item {
+    font-size: 12px;
+    height: 20px;
+  }
+  .help-sec ul li {
+    font-size: 12px;
+  }
+  footer > p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .btn {
+    font-size: 10px;
+    padding: 4px 9px;
+  }
+  .faq-item {
+    font-size: 15px;
+  }
+  .gs-section input {
+    display: none;
+  }
+  .gs-section button {
+    height: 30px;
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .welcome span:nth-child(1) {
+    font-size: 28px;
+  }
+  .welcome span:nth-child(2) {
+    font-size: 10px;
+  }
+  .welcome span:nth-child(3) {
+    font-size: 8px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .faq-item {
+    font-size: 12px;
+  }
+  .gs-section button {
+    height: 30px;
+    padding: 6px 12px;
+  }
+  .rsn-card p:nth-child(1) {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .rsn-card p:nth-child(2) {
+    font-size: 8px;
+    padding-top: 8px;
+  }
+  .faq-item {
+    font-size: 10px;
+    height: 20px;
+  }
+  .help-sec ul li {
+    font-size: 10px;
+  }
+  footer > p {
+    font-size: 10px;
+  }
+  .help-sec {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .rsn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 580px) {
+  .welcome span:nth-child(1) {
+    font-size: 20px;
+  }
+  .welcome span:nth-child(2) {
+    font-size: 8px;
+  }
+  .welcome span:nth-child(3) {
+    font-size: 6px;
+  }
+  .btn {
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+  .faq-item {
+    font-size: 8px;
+  }
+  .gs-section button {
+    height: 20px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .rsn-card p:nth-child(1) {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  .rsn-card p:nth-child(2) {
+    font-size: 7px;
+    padding-top: 8px;
+  }
+  .faq-item {
+    font-size: 8px;
+    height: 20px;
+  }
+  .help-sec ul li {
+    font-size: 8px;
+  }
+  footer > p {
+    font-size: 8px;
+  }
+  .help-sec {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .rsn-grid {
+    grid-template-columns: 1fr;
+  }
+  .trd-grid {
+    grid-template-columns: 1fr;
+  }
 }
